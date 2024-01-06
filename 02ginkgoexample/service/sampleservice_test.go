@@ -1,7 +1,7 @@
 package service_test
 
 import (
-	"ginkgoexample/service"
+	"02ginkgoexample/service"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"testing"

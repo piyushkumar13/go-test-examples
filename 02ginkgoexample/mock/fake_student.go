@@ -2,7 +2,7 @@
 package mock
 
 import (
-	"ginkgoexample/service"
+	"02ginkgoexample/service"
 	"sync"
 )
 

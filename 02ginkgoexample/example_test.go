@@ -1,13 +1,24 @@
 package ginkgoexample_test
 
 import (
-	"ginkgoexample"
-	"ginkgoexample/mock"
+	ginkgoexample "02ginkgoexample"
+	"02ginkgoexample/mock"
+	"fmt"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
 
+// F in front of It,Context,Describe or any block method means focus - it will run only that block in the suite. Ex - FIt()
+// X in front of It,Context,Describe or any block method means exclude that block - it will skip that block in the suite. Ex - XIt()
 var _ = Describe("Example", func() {
+
+	BeforeEach(func() {
+		fmt.Println("Inside before Each")
+	})
+
+	AfterEach(func() {
+		fmt.Println("Inside after each")
+	})
 
 	Describe("CheckFullName", func() {
 
@@ -30,7 +41,7 @@ var _ = Describe("Example", func() {
 
 	Describe("CheckAge", func() {
 
-		Context("Student Age", func() {
+		When("Student Age", func() {
 
 			It("Should return String age", func() {
 
@@ -55,5 +66,4 @@ var _ = Describe("Example", func() {
 		})
 
 	})
-
 })

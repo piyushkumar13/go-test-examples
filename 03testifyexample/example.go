@@ -1,6 +1,6 @@
-package ginkgoexample
+package testifyexample
 
-import "ginkgoexample/service"
+import "03testifyexample/service"
 
 func CheckFullName(student service.Student) string {
 

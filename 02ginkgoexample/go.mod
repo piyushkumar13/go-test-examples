@@ -1,4 +1,4 @@
-module ginkgoexample
+module 02ginkgoexample
 
 go 1.21.5
 
